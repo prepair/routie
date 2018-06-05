@@ -54,7 +54,7 @@ routie.navigate = (path, options) => {
   }
 
   setTimeout(() => {
-    if (window.history.pushState && HashChangeEvent) {
+    if (window.history.pushState && window.HashChangeEvent) {
       let oldURL = window.location.toString();
       window.history.pushState({}, '', `#${path}`);
       window.dispatchEvent(new HashChangeEvent('hashchange', { oldURL, newURL: window.location.toString() }));
