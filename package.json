@@ -1,6 +1,6 @@
 {
   "name": "@prepair/routie",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tiny little hash routing library",
   "main": "lib/index.js",
   "scripts": {
